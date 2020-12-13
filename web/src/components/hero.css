@@ -1,0 +1,23 @@
+.hero__tags {
+  font-family: 'Josefin Sans';
+}
+
+.hero__img img {
+  z-index: 2;
+}
+
+img.hero__grafik {
+  z-index: 0;
+}
+
+.hero__informations {
+  font-family: playfair display;
+}
+
+.hero__informations h1 {
+  color: #9B6F19;
+}
+
+.hero__informations p {
+
+}

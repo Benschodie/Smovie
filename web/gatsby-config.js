@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 // Load variables from `.env` as soon as possible
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV || 'development'}`
@@ -19,6 +20,17 @@ module.exports = {
         token,
         watchMode: !isProd,
         overlayDrafts: !isProd && token
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          // eslint-disable-next-line no-useless-escape
+          `playfair display\:400, 600, 800`,
+          `Josefin Sans\: 400, 600, 800`
+        ],
+        display: 'swap'
       }
     }
   ]
